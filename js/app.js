@@ -1,4 +1,35 @@
 $(function(){
+	/*=============================================
+				Change color  Barnav
+	=============================================*/
+	const url = location.pathname,
+		barraNavegacion = $('.barra-navegacion')
+
+	// Compruebo en que pagina esta
+	if(url.includes('index') || url == '/'){
+		console.log('index')
+		$('.manu-items a').each(function(){
+			$(this).css('opacity', '1')
+		})
+	}else{
+		// Si no es el home , la baar de navegacion cambia de color
+		$('.menu-items a').addClass('change-color-barra')
+		$('.container-mas span, .container-mas svg, .container-mas h4 ').addClass('change-color-barra')
+		$('.instagram-mas > span').addClass('change-color-barra')
+		$('.container-mas h4').addClass('add-border-reserva')
+		
+		// se le cambia la opacidad a los items del menu
+		$('.menu-items a').each(function(){
+			if(url.includes($(this).text())){
+				/* $(this).css('opacity', '1') */
+				$(this).addClass('item-active')
+				
+			}else{
+				$(this).addClass('change-opacity-items')
+				/* $(this).css('opacity', '.4') */
+			}
+		})
+	}
 
     /*=============================================
                 Bug nav - menu
@@ -45,15 +76,15 @@ $(function(){
 			console.log('se paso');
             if(matchMedia('(min-width: 1100px)').matches){
 				$('.barra-navegacion').addClass('back-transparent');
-				$('.menu .menu-items a').addClass('menu-color-scroll');
+				/* $('.menu .menu-items a').addClass('menu-color-scroll');
 				$('.boton-home').addClass('logo-home-color');
-				$('.instagram-mas svg, .instagram-mas h4').addClass('change-instagram-and-book');
+				$('.instagram-mas svg, .instagram-mas h4').addClass('change-instagram-and-book'); */
             }
         }else{
 			$('.barra-navegacion').removeClass('back-transparent');
-			$('.menu .menu-items a').removeClass('menu-color-scroll');
+			/* $('.menu .menu-items a').removeClass('menu-color-scroll');
 			$('.boton-home').removeClass('logo-home-color');
-			$('.instagram-mas svg, .instagram-mas h4').removeClass('change-instagram-and-book');
+			$('.instagram-mas svg, .instagram-mas h4').removeClass('change-instagram-and-book'); */
         }
 		/* if (scroll > windowHeight) {
 			console.log('rebasaste la altura de la ventana.');

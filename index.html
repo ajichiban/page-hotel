@@ -29,7 +29,7 @@
             </div>
         
             <div class="mobile-book-now">
-                <h4>Book now</h4>
+                <h4>Reservar</h4>
             </div>
         
             <div class="menu-mobile" id="menu-mobile">
@@ -37,16 +37,21 @@
             </div>
         
             <ul class="menu ">
-                <li class="menu-items"><a href="#">about</a></li>
-                <li class="menu-items"><a href="#">rooms</a></li>
-                <li class="menu-items"><a href="#">eat + drink</a></li>
-                <li class="menu-items"><a href="#">gallery</a></li>
-                <li class="menu-items"><a href="#">contact</a></li>
+                <li class="menu-items"><a href="./pages/alava.html">alava</a></li>
+                <li class="menu-items"><a href="#">suites</a></li>
+                <li class="menu-items"><a href="#">servicios</a></li>
+                <li class="menu-items"><a href="#">experiencias</a></li>
+                <li class="menu-items"><a href="#">contacto</a></li>
             </ul>
             
             <div class="instagram-mas">
-                <i class="fab fa-instagram"></i>
-                <h4>book now</h4>
+                <div class="container-mas" >
+                    <span>ES</span>
+                    <i class="fab fa-instagram"></i>
+                    
+                    <h4>reservar</h4>
+                </div>
+                <span class="adult">Adult Only</span>
             </div>
         </nav>
         
@@ -89,72 +94,119 @@
     <!-- /*=============================================
                       MAIN CONTENT
     =============================================*/ -->
-
-
     <div class="container">
-        <section class="main-content">
-            <div class="container-relative">
-                <a href="#">
-                    <div class="main-item">
-                        <img src="img/main-1.jpg" alt="" class="img-item">
-                        <h3>book now</h3>
-                    </div>
-                </a>
+        <div class="main-content">
+            <div class="main-items">
+                <img src="./img/sections/alava.png" alt="">
+                <h3 class="main-title">alava</h3>
             </div>
-
-            <div class="container-relative">
-                <a href="#">
-                    <div class="main-item item2">
-                        <img src="img/main-2.jpg" alt="" class="img-item">
-                        <h3>about</h3>
-                    </div>
-                </a>    
+            <div class="main-items">
+                <img src="./img/sections/suites.png" alt="">
+                <h3 class="main-title">suites</h3>
             </div>
-
-            <div class="container-relative">
-                <a href="#">
-                    <div class="main-item">
-                        <img src="img/main-3.jpg" alt="" class="img-item">
-                        <h3>rooms</h3>
-                    </div>
-                </a>
+            <div class="main-items">
+                <img src="./img/sections/servicios.png" alt="">
+                <h3 class="main-title">servicios</h3>
             </div>
-            <div class="container-relative">
-                <a href="#">
-                    <div class="main-item">
-                        <img src="img/main-4.jpg" alt="" class="img-item">
-                        <h3>roof deck</h3>
-                    </div>
-                </a>
+            <div class="main-items">
+                <img src="./img/sections/experiencias.png" alt="">
+                <h3 class="main-title">experiencias</h3>
             </div>
-            <div class="container-relative">
-                <a href="#">
-                    <div class="main-item item5">
-                        <img src="img/main-5.jpg" alt="" class="img-item">
-                        <h3>gallery</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="container-relative">
-                <a href="#">
-                    <div class="main-item">
-                        <img src="img/main-6.jpg" alt="" class="img-item">
-                        <h3>contact</h3>
-                    </div>
-                </a>
-            </div>
-        </section>
+        </div>
     </div>
+    <!-- /*=============================================
+                        Fotos
+    =============================================*/ -->
+    <div class="container container-principal-fotos">
+        <h3 class="main-title">fotos</h3>
+        <div class="container-fotos row">
+            <div class="foto col-12 col-md-3">
+                <a href="#">
+                    <img src="./img/fotos/foto1.png" alt="">
+                </a>
+            </div>
+            <div class="foto col-12 col-md-3">
+                <a href="#">
+                    <img src="./img/fotos/foto2.png" alt="">
+                </a>
+            </div>
+            <div class="foto-dividida col-12 col-md-3">
+                <div class="foto-primera">
+                    <a href="#">
+                        <img src="./img/fotos/foto3.png" alt="">
+                    </a>
+                </div>
+                <div class="foto-segunda">
+                    <a href="#">
+                        <img src="./img/fotos/foto4.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="foto col-12 col-md-3">
+                <a href="#">
+                    <img src="./img/fotos/foto5.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- /*=============================================
+                        Contacto
+    =============================================*/ -->
     
+    <div class="container container-contacto">
+        <h3 class="main-title">contacto</h3>
+        <div class="mapa">
+            <img src="./img/map.png" alt="">
+        </div>
+        <div class="container-newsletter row">
+            <div class="direccion-contacto col-12 col-md-6">
+                <div class="direccion">
+                    <p>Costa Teguise - Calle Italia 4</p>
+                    <p>35508 - Lanzarote - España</p>
+                </div>
+                <div class="horarios">
+                    <p>Horario de Informacion y Reservas</p>
+                    <p>Todos los dias de 10:00 - 16:00 horas</p>
+                </div>
+                <div class="email">
+                    <p>T.(+34)...</p>
+                    <p>info@alavasuites.com</p>
+                </div>
+                <div class="redes-sociales">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="formulario-contacto col-12 col-md-6">
+                <form >
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Numero">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Correo">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Consulta" ></textarea>
+                    </div>
+                    <div class="btn-submit d-flex justify-content-end">
+                        <button class ="btn" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- /*=============================================
                         Footer
     =============================================*/ -->
 
-    <footer>
+    <!-- <footer>
             <p>+1 (310) 526-6158 | INFO@THESURFRIDERMALIBU.COM</p>
             <p>23033 PACIFIC COAST HIGHWAY, MALIBU, CA 90265</p>
             <p>© SURFRIDER BEACH CLUB LLC 2019</p>
-    </footer>
+    </footer> -->
 
     <script src="js/jquery-3.3.1.js" ></script>
     <script src="js/bootstrap.min.js"></script>

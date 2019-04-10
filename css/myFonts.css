@@ -10,3 +10,18 @@
 	font-family: "Rotterdalle";
 	src: url(../myFonts/Rotterdalle.otf);
 }
+
+@font-face{
+	font-family: "Accord Regular";
+	src: url(../myFonts/Absolut_Pro_BookCondensed.otf);
+}
+
+@font-face{
+	font-family: "Accord Light";
+	src: url(../myFonts/Absolut_Pro_LightCondensed.otf);
+}
+
+@font-face{
+	font-family: "Accord Thin";
+	src: url(../myFonts/Absolut_Pro_ThinCondensed.otf);
+}
