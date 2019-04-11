@@ -54,8 +54,55 @@ $(function(){
         $('.menu').css('top', '82px');   
         
     })
+	/*=============================================
+                    Page Suites 
+    =============================================*/
+	const btnsInfo = $('.btn-infoo'),
+		btnsReserva = $('.btn-reserva')
 
+	// Ocultar contenedores detalles
+	$('.detalles-reserva, .detalles-info').hide()
 
+	// agregar eventos a los botones de reserva e info.
+	$('.btn-infoo').each(function(){
+		$(this).click(function(){
+			// agregar al boton la class actived
+			$(this).toggleClass('btn-style-alava--actived')
+
+			// quitar al boton de al lado el Actived
+			$(this).siblings().removeClass('btn-style-alava--actived')
+
+			//ocultar contenedor reserva
+			$(this).parents('.container-suites')
+				.find('.detalles-reserva')
+				.slideUp()
+			// mostrar contenedor info
+			$(this).parents('.container-suites')
+				.find('.detalles-info')
+				.slideToggle()
+			
+		})
+	})
+
+	$('.btn-reserva').each(function(){
+		$(this).click(function(){
+			// agregar al boton la class actived
+			$(this).toggleClass('btn-style-alava--actived')
+
+			// quitar al boton de al lado el Actived
+			$(this).siblings().removeClass('btn-style-alava--actived')
+			
+			//ocultar contenedor info
+			$(this).parents('.container-suites')
+				.find('.detalles-info')
+				.slideUp()
+			// mostrar contenedor reserva
+			$(this).parents('.container-suites')
+				.find('.detalles-reserva')
+				.slideToggle()
+			
+		})
+	})
 	/*=============================================
                     Menu Fijo
     =============================================*/
@@ -120,5 +167,6 @@ $(function(){
 			console.log('aun no.');
 		}
 	}) */
+
 
 });
