@@ -44,43 +44,39 @@
         </div>
     </nav>
 
-    <div class="container container-experiencias">
-        <h3 class="page-title" >experiencias</h3>
-
-        <div class="block-experiencia">
-            <div class="experiencia-img">
-                <img src="../img/experiencias/yoga.png" alt="">
+        <div class="container container-galeria">
+            <div class="grid">
+            
+                <div class="grid-item"><img src="../img/galeria/1.jpg" alt=""></div>
+                <div class="grid-item"><img src="../img/galeria/2.jpg" alt=""></div>
+                <div class="grid-item"><img src="../img/galeria/3.jpg" alt=""></div>
+                <div class="grid-item"><img src="../img/galeria/4.jpg" alt=""></div>
+                <div class="grid-item"><img src="../img/galeria/5.jpg" alt=""></div>
+                <div class="grid-item"><img src="../img/galeria/6.jpg" alt=""></div>
+                <!-- <div class="grid-item"><img src="img/medium_MKSADLER-5596.jpg" alt=""></div>
+                <div class="grid-item"><img src="img/medium_MKSADLER-5619_web.jpg" alt=""></div>
+                <div class="grid-item"><img src="img/medium_MKSADLER-5647_web.jpg" alt=""></div>
+                <div class="grid-item"><img src="img/medium_MKSADLER-5702_web.jpg" alt=""></div> -->
+                
             </div>
-             <div class="container-info">
-                 <div class="experiencia-content">
-                     <h4>clases yoga</h4>
-                     <p>Las clases se dispondrá para los clientes del hotel y para residentes. Podrán escoger entre clases en grupo (máximo de 5 personas) o clases privadas. El precio para los clientes de Marea de las clases grupales será de (€ por determinar) y el de las privadas de (€ por determinar). También se podrá comprar un bono para toda la estancia con un precio por clase más reducido.</p>
-                     <span>+info</span>
-                 </div>
-             </div>
         </div>
+        
+        
 
-
-        <div class="block-experiencia-invertido">
-            <div class="experiencia-img-invertido">
-                <img src="../img/experiencias/golf.jpg" alt="">
-            </div>
-             <div class="container-info-invertido">
-                 <div class="experiencia-content">
-                     <h4>clases de yoga</h4>
-                     <p>Las clases se dispondrá para los clientes del hotel y para residentes. Podrán escoger entre clases en grupo (máximo de 5 personas) o clases privadas. El precio para los clientes de Marea de las clases grupales será de (€ por determinar) y el de las privadas de (€ por determinar). También se podrá comprar un bono para toda la estancia con un precio por clase más reducido.</p>
-                     <span>+info</span>
-                 </div>
-             </div>
-        </div>
-
-
-    </div>
 
     <script src="../js/jquery-3.3.1.js" ></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/masonry.pkgd.min.js" ></script>
     <script src="../js/all.js" ></script>
     <script src="../js/app.js" ></script>
+    <script type="text/javascript">
+        $('.grid').masonry({
+      // options
+      itemSelector: '.grid-item',
+      columnWidth: 0,
+      percentPosition: true
+    });
+    </script>
     
 </body>
 </html>

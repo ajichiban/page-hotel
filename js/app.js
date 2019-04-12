@@ -57,8 +57,6 @@ $(function(){
 	/*=============================================
                     Page Suites 
     =============================================*/
-	const btnsInfo = $('.btn-infoo'),
-		btnsReserva = $('.btn-reserva')
 
 	// Ocultar contenedores detalles
 	$('.detalles-reserva, .detalles-info').hide()
@@ -115,24 +113,26 @@ $(function(){
 	$(window).scroll(function(){
 		var scroll = $(window).scrollTop();	
 		let carouselContainer = $('#carouselId').innerHeight()
-        /* console.log('altura de la barra :',barraAltura )
-        console.log('altura de la ventana :',windowHeight ) */
-        /* console.log('altura scroll :', scroll ) */
-
-        if(scroll > carouselContainer){
-			console.log('se paso');
-            if(matchMedia('(min-width: 1100px)').matches){
-				$('.barra-navegacion').addClass('back-transparent');
-				/* $('.menu .menu-items a').addClass('menu-color-scroll');
-				$('.boton-home').addClass('logo-home-color');
-				$('.instagram-mas svg, .instagram-mas h4').addClass('change-instagram-and-book'); */
-            }
-        }else{
-			$('.barra-navegacion').removeClass('back-transparent');
-			/* $('.menu .menu-items a').removeClass('menu-color-scroll');
-			$('.boton-home').removeClass('logo-home-color');
-			$('.instagram-mas svg, .instagram-mas h4').removeClass('change-instagram-and-book'); */
-        }
+        
+		if( url.includes('index') || url == '/'){
+			if(scroll > carouselContainer){
+				console.log('se paso');
+				if(matchMedia('(min-width: 1100px)').matches){
+					
+					$('.barra-navegacion').removeClass('back-transparent-dark');
+					$('.barra-navegacion').addClass('back-transparent');
+					$('.menu .menu-items a').addClass('menu-color-scroll');
+					$('.boton-home').addClass('logo-home-color');
+					$('.instagram-mas svg, .instagram-mas h4').addClass('change-instagram-and-book');
+				}
+			}else{
+				$('.barra-navegacion').addClass('back-transparent-dark');
+				$('.barra-navegacion').removeClass('back-transparent');
+				$('.menu .menu-items a').removeClass('menu-color-scroll');
+				$('.boton-home').removeClass('logo-home-color');
+				$('.instagram-mas svg, .instagram-mas h4').removeClass('change-instagram-and-book');
+			}
+		}
 		/* if (scroll > windowHeight) {
 			console.log('rebasaste la altura de la ventana.');
 			$('.barra-navegacion').addClass('fixed');
