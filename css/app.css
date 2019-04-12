@@ -27,10 +27,10 @@ body{
 /* --- --- CLASS UNITS --- --- */
 .back-transparent{
     /* opacity: .8; */
-    background: rgba(245, 246, 241, 0.356);
+    background: rgba(245, 246, 241, 0.664) !important;
 }
 .back-transparent-dark{
-    background: rgba(38, 38, 38, 0.192);
+    background: rgba(38, 38, 38, 0.116) !important;
 }
 .change-color-barra{
     color: rgb(150, 128, 95) !important;

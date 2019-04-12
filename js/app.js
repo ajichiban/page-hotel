@@ -17,6 +17,7 @@ $(function(){
 		$('.container-mas span, .container-mas svg, .container-mas h4 ').addClass('change-color-barra')
 		$('.instagram-mas > span').addClass('change-color-barra')
 		$('.container-mas h4').addClass('add-border-reserva')
+		$('.barra-navegacion').addClass('back-transparent')
 		
 		// se le cambia la opacidad a los items del menu
 		$('.menu-items a').each(function(){
