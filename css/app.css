@@ -24,6 +24,14 @@ body{
 .blue{
     background: blueviolet !important;
 }
+
+/* --- --- CLASS BOOTSTRAP --- --- */
+.modal-content{
+    border-radius: initial;
+    background: rgb(245, 246, 241);
+    padding: 20px 10px;
+}
+
 /* --- --- CLASS UNITS --- --- */
 .back-transparent{
     /* opacity: .8; */
@@ -60,10 +68,14 @@ body{
 .logo-home-color{
     color: rgb(38, 38, 38) !important;
 }
-.change-instagram-and-book{
+.skin-dark{
     color: rgb(73, 68, 68) !important;
 }
-.change-instagram-and-book:hover{
+.skin-dark-with-border{
+    color: rgb(73, 68, 68) !important;
+    border: 2px solid rgb(73, 68, 68) !important;
+}
+.skin-dark-with-border:hover{
     color: rgb(38, 38, 38) !important;
 }
 /* --- --- --- --- --- --- */
@@ -87,15 +99,21 @@ body{
 .barra-navegacion > * {
     flex-basis: 33.3%;
 }
+
+.barra-navegacion > a:hover{
+    text-decoration: none;
+}
 .boton-home{
-    flex-basis: 10%;
+    /* flex-basis: 10%; */
     padding-left: 30px;
     font-weight: lighter;
     font-family: 'Rotterdalle';
     line-height: 10px;
     font-size: 33px;
     cursor: pointer;
+    flex-grow: 1;
 }
+
 .menu{
     display: none;
     font-family: 'Accord Regular';
@@ -135,7 +153,8 @@ body{
     cursor: pointer;
     font-size: 17px;
     letter-spacing: 7px;
-    flex-basis: 50%;
+    /* flex-basis: 50%; */
+    flex-grow: 1;
 
 }
 .mobile-book-now h4{
@@ -643,35 +662,17 @@ footer p {
 .container-experiencias .page-title{
     margin-bottom: 100px;
 }
-.block-experiencia{
-    display: flex;
-    justify-content: end;
-    height: 50vh;
-    position: relative;
-    margin-bottom: 100px;
-}
+.block-experiencia,
 .block-experiencia-invertido{
     display: flex;
-    justify-content: start;
-    height: 50vh;
-    position: relative;
+    flex-direction: column;
+    height: 80vh;
     margin-bottom: 100px;
 }
-.experiencia-img{
-    flex-basis: 30%;
-    position: absolute;
-    top:18px;
-    left: 0;
-    width: 32vw;
-    height: 90%;
-}
+
+.experiencia-img,
 .experiencia-img-invertido{
-    flex-basis: 30%;
-    position: absolute;
-    top:18px;
-    right: 0;
-    width: 32vw;
-    height: 90%;
+    height: 60%;
 }
 
 .experiencia-img img,
@@ -679,20 +680,15 @@ footer p {
     width: 100%;
     height: 100%;
 }
-.container-info{
-    flex-basis: 70%;
-    border: 2px solid rgb(175, 136,79);
-    padding: 20px 20px 20px 120px;
-    text-align: left;
-    height: 100%;
-}
+.container-info,
 .container-info-invertido{
-    flex-basis: 70%;
+    /* flex-basis: 50%; */
     border: 2px solid rgb(175, 136,79);
-    padding: 20px 120px 20px 20px;
-    text-align: right;
-    height: 100%;
+    padding: 20px;
+    text-align: center;
+    /* height: 100%; */
 }
+
 .experiencia-content{
     display: flex;
     flex-direction: column;
@@ -711,6 +707,67 @@ footer p {
     font-size: 12pt;
     text-transform: uppercase;
     text-align: right;
+    cursor: pointer;
+    transition: opacity ease .5s;
+}
+.experiencia-content span:hover{
+    opacity: .5;
+}
+
+/* --- --- MODAL EXPERIENCIAS --- --- */
+.container-experiencia-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modal-title{
+    font-size: 12pt;
+    color: rgb(175, 136,79);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.img-experiencia-modal{
+    margin-bottom: 20px;
+}
+.img-experiencia-modal img{
+    width: 100%;
+}
+.info-modal{
+    text-align: justify;
+}
+.reservas-modal {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.reservas-modal .tipos-servicios{
+    width: 100%;
+    display: flex;
+}
+.reservas-modal .tipos-servicios > * {
+    border: 2px solid rgb(175, 136,79);
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.reservas-modal .tipos-servicios .nombre-servicio{
+    flex-basis: 70%;
+}
+.reservas-modal .tipos-servicios button{
+    border: none;
+    flex-basis: 30%;
+    color: rgb(245, 246, 241);
+    background: rgb(175, 136,79);
+    transition: all ease .5s;
+}
+.reservas-modal .tipos-servicios button:hover {
+    /* color: rgb(175, 136,79); */
+    background: rgba(175, 136, 79, 0.52);
 }
 
 /* ################################################################################
@@ -720,28 +777,25 @@ footer p {
     margin-top: 200px;
     margin-bottom: 50px;
 }
-.container-galeria .grid{
-    /* margin-left: 10%; */
-}
-/* .grid .my-grid > *{
-    flex-basis: 30%;
-    
-} */
+
 .container-galeria .grid > * {
-    /* margin-bottom: 5px;
-    margin-right: 2.5px;
-    margin-left: 2.5px; */
     margin: 0 .66% 15px .66%;
-    /* width: 30%; */
 }
 
 .grid .grid-item{
-    width: 32%;
-
+    width: 100%;
 }
 .grid .grid-item img{
     width: 100%;
 
+}
+
+/* ################################################################################
+                                   PAGE CONTACTO
+################################################################################ */
+
+.container-contacto .page-title{
+    margin-top: 150px;
 }
 /*=============================================
                 MEDIA QUERIES
@@ -776,7 +830,62 @@ footer p {
         padding: 5px;
     }
 
-
+    /* --- --- PAGE GALERIA --- --- */
+    .grid .grid-item{
+        width: 48%;
+    }
+    /* --- --- PAGE EXPERIENCIAS --- --- */
+    .block-experiencia{
+        justify-content: end;
+        height: 50vh;
+        position: relative;
+        flex-direction: row;
+    }
+    .block-experiencia-invertido{
+        
+        justify-content: start;
+        height: 50vh;
+        position: relative;
+        flex-direction: row;
+    }
+    .experiencia-img{
+        flex-basis: 30%;
+        position: absolute;
+        top:18px;
+        left: 0;
+        width: 32vw;
+        height: 90%;
+    }
+    .experiencia-img-invertido{
+        flex-basis: 30%;
+        position: absolute;
+        top:18px;
+        right: 0;
+        width: 32vw;
+        height: 90%;
+    }
+    
+    /* .experiencia-img img,
+    .experiencia-img-invertido img {
+        width: 100%;
+        height: 100%;
+    } */
+    .container-info{
+        flex-basis: 70%;
+        /* border: 2px solid rgb(175, 136,79);*/
+        padding: 20px 20px 20px 120px; 
+        text-align: left;
+        height: 100%;
+    }
+    .container-info-invertido{
+        flex-basis: 70%;
+        padding: 20px 120px 20px 20px;
+        text-align: right;
+        height: 100%;
+    }
+    .container-info-invertido span {
+        text-align: left;
+    }
 
 }
 
@@ -784,6 +893,11 @@ footer p {
     /* --- --- Page Alava --- --- */
     .page-alava .page-text p{
         padding: 0 15%;
+    }
+
+    /* --- --- PAGE GALERIA --- --- */
+    .grid .grid-item{
+        width: 32%;
     }
 }
 

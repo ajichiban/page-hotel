@@ -11,6 +11,7 @@ $(function(){
 		$('.manu-items a').each(function(){
 			$(this).css('opacity', '1')
 		})
+		$('.barra-navegacion').addClass('back-transparent-dark')
 	}else{
 		// Si no es el home , la baar de navegacion cambia de color
 		$('.menu-items a').addClass('change-color-barra')
@@ -110,6 +111,8 @@ $(function(){
 	// altura de la barra del menu.
 	let barraAltura = $('.barra-navegacion').innerHeight();
 
+	
+
 	//Cuanto scroll estamos haciedo.
 	$(window).scroll(function(){
 		var scroll = $(window).scrollTop();	
@@ -124,14 +127,18 @@ $(function(){
 					$('.barra-navegacion').addClass('back-transparent');
 					$('.menu .menu-items a').addClass('menu-color-scroll');
 					$('.boton-home').addClass('logo-home-color');
-					$('.instagram-mas svg, .instagram-mas h4').addClass('change-instagram-and-book');
+					$('.instagram-mas svg, .container-mas > span').addClass('skin-dark')
+					$('.instagram-mas h4').addClass('skin-dark-with-border');
+					$('.adult').addClass('skin-dark')
 				}
 			}else{
 				$('.barra-navegacion').addClass('back-transparent-dark');
 				$('.barra-navegacion').removeClass('back-transparent');
 				$('.menu .menu-items a').removeClass('menu-color-scroll');
 				$('.boton-home').removeClass('logo-home-color');
-				$('.instagram-mas svg, .instagram-mas h4').removeClass('change-instagram-and-book');
+				$('.instagram-mas svg, .container-mas > span').removeClass('skin-dark')
+					$('.instagram-mas h4').removeClass('skin-dark-with-border');
+				$('.adult').removeClass('skin-dark')
 			}
 		}
 		/* if (scroll > windowHeight) {
