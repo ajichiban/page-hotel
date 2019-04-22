@@ -61,7 +61,7 @@ $(function(){
     =============================================*/
 
 	// Ocultar contenedores detalles
-	$('.detalles-reserva, .detalles-info').hide()
+	$('.detalles-reserva').hide()
 
 	// agregar eventos a los botones de reserva e info.
 	$('.btn-infoo').each(function(){
@@ -73,18 +73,18 @@ $(function(){
 			$(this).siblings().removeClass('btn-style-alava--actived')
 
 			//ocultar contenedor reserva
-			$(this).parents('.container-suites')
+			/* $(this).parents('.container-suites')
 				.find('.detalles-reserva')
-				.slideUp()
+				.slideUp() */
 			// mostrar contenedor info
 			$(this).parents('.container-suites')
-				.find('.detalles-info')
+				.find('.detalles-reserva')
 				.slideToggle()
 			
 		})
 	})
-
-	$('.btn-reserva').each(function(){
+	// FUNCION PRONTO A IMPLEMENTAR //
+	/* $('.btn-reserva').each(function(){
 		$(this).click(function(){
 			// agregar al boton la class actived
 			$(this).toggleClass('btn-style-alava--actived')
@@ -102,7 +102,7 @@ $(function(){
 				.slideToggle()
 			
 		})
-	})
+	}) */
 	/*=============================================
                     Menu Fijo
     =============================================*/
@@ -141,40 +141,6 @@ $(function(){
 				$('.adult').removeClass('skin-dark')
 			}
 		}
-		/* if (scroll > windowHeight) {
-			console.log('rebasaste la altura de la ventana.');
-			$('.barra-navegacion').addClass('fixed');
-
-			//evita el brinco que da al cambiar de tamaño la barra.
-			$('body').css({'margin-top': barraAltura+'px'});
-		}else{
-			$('.barra-navegacion').removeClass('fixed');
-			$('body').css({'margin-top':'0px'});
-			console.log('aun no.');
-		} */
+	
 	})
-
-
-	//altura de la ventana.
-	/* var windowHeight = $(window).height();
-	// altura de la barra del menu.
-	var barraAltura = $('.barra').innerHeight();
-
-	//Cuanto scroll estamos haciedo.
-	$(window).scroll(function(){
-		var scroll = $(window).scrollTop();	
-		if (scroll > windowHeight) {
-			console.log('rebasaste la altura de la ventana.');
-			$('.barra').addClass('fixed');
-
-			//evita el brinco que da al cambiar de tamaño la barra.
-			$('body').css({'margin-top': barraAltura+'px'});
-		}else{
-			$('.barra').removeClass('fixed');
-			$('body').css({'margin-top':'0px'});
-			console.log('aun no.');
-		}
-	}) */
-
-
 });
