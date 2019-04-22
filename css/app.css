@@ -104,14 +104,17 @@ body{
     text-decoration: none;
 }
 .boton-home{
-    /* flex-basis: 10%; */
+    flex-basis: 10%;
     padding-left: 30px;
     font-weight: lighter;
     font-family: 'Rotterdalle';
     line-height: 10px;
     font-size: 33px;
     cursor: pointer;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+}
+.boton-home img{
+    width: 100%;
 }
 
 .menu{
@@ -664,7 +667,7 @@ footer p {
     margin-bottom: 100px;
 }
 .block-experiencia,
-.block-experiencia-invertido{
+.block-experiencia-invertido {
     display: flex;
     flex-direction: column;
     height: 80vh;
@@ -801,17 +804,23 @@ footer p {
 /*=============================================
                 MEDIA QUERIES
 =============================================*/ 
-@media(min-width: 480){
-    .main-content > * {
+@media(min-width: 480px){
+    /* .main-content > * {
         flex-basis: 80vw;
         padding: 40px;
         height: 55vw;
+    } */
+    .boton-home {
+        width: 60%;
     }
 }
 @media (min-width: 768px){
 
     .barra-navegacion .menu {
         flex-basis: 35%;
+    }
+    .boton-home{
+        width: 50%;
     }
     /* --- --- Slider --- --- */
     .carousel-inner{
@@ -837,7 +846,7 @@ footer p {
     }
     /* --- --- PAGE EXPERIENCIAS --- --- */
     .block-experiencia{
-        justify-content: end;
+        justify-content: flex-end;
         height: 50vh;
         position: relative;
         flex-direction: row;
@@ -916,10 +925,10 @@ footer p {
         padding-top: 0px;
     }
     .boton-home {
-        color: white;
+        width: 50%;
     }
 
-    .instagram-mas, .boton-home{
+    .instagram-mas{
         flex-basis: 25%;
     }
 
