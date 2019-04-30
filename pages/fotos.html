@@ -51,12 +51,29 @@
         <div class="container-fluid container-galeria">
             <div class="grid">
             
-                <div class="grid-item"><img src="../img/galeria/1.jpg" alt=""></div>
-                <div class="grid-item"><img src="../img/galeria/2.jpg" alt=""></div>
-                <div class="grid-item"><img src="../img/galeria/3.jpg" alt=""></div>
-                <div class="grid-item"><img src="../img/galeria/4.jpg" alt=""></div>
-                <div class="grid-item"><img src="../img/galeria/5.jpg" alt=""></div>
-                <div class="grid-item"><img src="../img/galeria/6.jpg" alt=""></div>
+                <div class="grid-item grid-sizer"><img src="../img/galeria/1.jpg" alt=""></div>
+                <div class="grid-item grid-sizer"><img src="../img/galeria/2.jpg" alt=""></div>
+                <div class="grid-item grid-sizer"><img src="../img/galeria/3.jpg" alt=""></div>
+                <div class="grid-item grid-sizer"><img src="../img/galeria/4.jpg" alt=""></div>
+                <div class="grid-item grid-sizer"><img src="../img/galeria/5.jpg" alt=""></div>
+                <div class="grid-item grid-sizer"><img src="../img/galeria/6.jpg" alt=""></div>
+                <div class="grid-item grid-sizer"><img src="../img/galeria/7.png" alt=""></div>
+                <div class="grid-item grid-sizer"><img src="../img/galeria/8.png" alt=""></div>
+                <div class="grid-item grid-sizer"><img src="../img/galeria/9.png" alt=""></div>
+
+                <div class="grid-item grid-sizer"><img src="../img/galeria/11.jpg" alt=""></div>
+                <div class="grid-item grid-sizer"><img src="../img/galeria/10.jpg" alt=""></div>
+                <div class="grid-item grid-sizer"><img src="../img/galeria/12.jpg" alt=""></div>
+
+                <div class="grid-item grid-sizer"><img src="../img/galeria/14.jpg" alt=""></div>
+                <div class="grid-item grid-sizer"><img src="../img/galeria/13.jpg" alt=""></div>
+                <div class="grid-item grid-sizer"><img src="../img/galeria/15.jpg" alt=""></div>
+
+                <div class="grid-item grid-sizer"><img src="../img/galeria/16.jpg" alt=""></div>
+                <div class="grid-item grid-sizer"><img src="../img/galeria/17.jpg" alt=""></div>
+                <div class="grid-item grid-sizer"><img src="../img/galeria/18.jpg" alt=""></div>
+                
+               
                 <!-- <div class="grid-item"><img src="img/medium_MKSADLER-5596.jpg" alt=""></div>
                 <div class="grid-item"><img src="img/medium_MKSADLER-5619_web.jpg" alt=""></div>
                 <div class="grid-item"><img src="img/medium_MKSADLER-5647_web.jpg" alt=""></div>
@@ -77,8 +94,9 @@
         $('.grid').masonry({
       // options
       itemSelector: '.grid-item',
-      columnWidth: 0,
-      percentPosition: true
+      columnWidth: '.grid-sizer',
+      percentPosition: true,
+      /* horizontalOrder: true */
     });
     </script>
     
