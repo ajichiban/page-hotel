@@ -5,6 +5,7 @@ $(function() {
     const url = location.pathname,
         barraNavegacion = $('.barra-navegacion')
 
+
     // Compruebo en que pagina esta
     if (url.includes('index') || url == '/') {
         console.log('index')
@@ -15,7 +16,7 @@ $(function() {
     } else {
         // Si no es el home , la baar de navegacion cambia de color
         $('.menu-items a').addClass('change-color-barra')
-        $('.container-mas span, .container-mas svg, .container-mas h4 ').addClass('change-color-barra')
+        $('.container-mas span, .container-mas h4, .typcn').addClass('skin-dark')
         $('.instagram-mas > span').addClass('change-color-barra')
         $('.container-mas h4').addClass('add-border-reserva')
         $('.container-mas svg').addClass('change-color-barra')
@@ -128,16 +129,19 @@ $(function() {
                     $('.barra-navegacion').addClass('back-transparent');
                     $('.menu .menu-items a').addClass('menu-color-scroll');
                     $('.boton-home').addClass('logo-home-color');
-                    $('.instagram-mas svg, .container-mas > span').addClass('skin-dark')
+                    $('.container-mas span').addClass('skin-dark')
                     $('.instagram-mas h4').addClass('skin-dark-with-border');
-                    $('.adult').addClass('skin-dark')
+                    $('.adult').addClass('skin-dark');
+
+                    // icono de instagram
+                    $('.typcn-social-instagram').addClass('skin-dark')
                 }
             } else {
                 $('.barra-navegacion').addClass('back-transparent-dark');
                 $('.barra-navegacion').removeClass('back-transparent');
                 $('.menu .menu-items a').removeClass('menu-color-scroll');
                 $('.boton-home').removeClass('logo-home-color');
-                $('.instagram-mas svg, .container-mas > span').removeClass('skin-dark')
+                $('.container-mas span').removeClass('skin-dark')
                 $('.instagram-mas h4').removeClass('skin-dark-with-border');
                 $('.adult').removeClass('skin-dark')
             }

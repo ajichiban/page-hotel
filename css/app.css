@@ -52,6 +52,7 @@ body {
 
 .change-color-barra {
     color: rgb(150, 128, 95) !important;
+    /* --color-ins: rgb(175, 136, 79) !important; */
 }
 
 .change-color-barra:hover {
@@ -93,6 +94,7 @@ body {
 .skin-dark {
     /* color: rgb(73, 68, 68) !important; */
     color: rgb(175, 136, 79) !important;
+    --color-ins: rgb(175, 136, 79) !important;
 }
 
 .skin-dark-with-border {
@@ -130,7 +132,9 @@ body {
 .barra-navegacion>* {
     flex-basis: 33.3%;
 }
-
+.barra-navegacion>a{
+    flex-basis: 25%;
+}
 .barra-navegacion>a:hover {
     text-decoration: none;
 }
@@ -246,24 +250,31 @@ body {
     cursor: pointer;
 }
 
-.container-mas svg {
+
+.container-mas .typcn-social-instagram{
+    --color-ins : rgb(245, 246, 241);
+}
+.container-mas .typcn-social-instagram::before {
     cursor: pointer;
-    font-size: 20px;
-    color: rgb(245, 246, 241);
+    font-size: 1.8rem;
+    color: var(--color-ins ) ;
     margin-right: 30px;
+    width: 100%;
+    height: 100%;
 }
 
-.container-mas svg:hover {
+.container-mas .typcn-social-instagram:hover::before {
     color: rgb(38, 38, 38);
 }
 
-.container-mas span {
-    margin-right: 20px;
+.container-mas .es {
+    /* margin-right: 20px; */
     color: rgb(245, 246, 241);
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
-.container-mas span:hover {
+.container-mas .es:hover {
     color: rgb(38, 38, 38);
 }
 
@@ -452,7 +463,7 @@ body {
     margin-bottom: 16px;
 }
 
-.direccion-contacto .redes-sociales svg {
+.direccion-contacto .redes-sociales .typcn-social-instagram::before {
     color: rgb(175, 136, 79);
     font-size: 17pt;
     cursor: pointer;
@@ -511,7 +522,7 @@ footer p {
 }
 
 .page-alava {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 
@@ -622,7 +633,9 @@ footer p {
     letter-spacing: 6px;
     text-transform: uppercase;
 }
-
+.mas{
+    display: flex;
+}
 .btn-style-alava {
     border: 2px solid rgb(175, 136, 79);
     padding: 2px 10px;
@@ -648,7 +661,8 @@ footer p {
 }
 
 .btn-infoo {
-    margin-right: 5px;
+    padding: 2px 1.2rem;
+    margin-right: .8rem;
     font-family: 'Accord thin';
     font-size: 12pt;
 }
@@ -859,7 +873,7 @@ footer p {
 .experiencia-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 100%;
 }
 
@@ -877,6 +891,11 @@ footer p {
     text-align: right;
     cursor: pointer;
     transition: opacity ease .5s;
+}
+
+.experiencia-content > p {
+    margin-bottom: 0;
+    line-height: 1.8rem;
 }
 
 .experiencia-content span:hover {
@@ -1031,13 +1050,13 @@ footer p {
     /* --- --- PAGE EXPERIENCIAS --- --- */
     .block-experiencia {
         justify-content: flex-end;
-        height: 45vh;
+        height: 40vh;
         position: relative;
         flex-direction: row;
     }
     .block-experiencia-invertido {
         justify-content: start;
-        height: 45vh;
+        height: 40vh;
         position: relative;
         flex-direction: row;
     }
