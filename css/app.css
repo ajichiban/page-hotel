@@ -43,7 +43,7 @@ body {
 
 .back-transparent {
     /* opacity: .8; */
-    background: rgba(245, 246, 241, 0.664) !important;
+    background: rgba(245, 246, 241, 0.911) !important;
 }
 
 .back-transparent-dark {
@@ -345,7 +345,7 @@ body {
 
 .main-items .cont-relative h3 {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: bold;
     color: rgba(248, 246, 246, 0.945);
     ;
