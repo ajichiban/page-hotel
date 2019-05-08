@@ -218,7 +218,7 @@ body {
     align-self: flex-end;
     color: rgb(245, 246, 241);
     letter-spacing: 3px;
-    font-size: 12pt;
+    font-size: .9rem;
 }
 
 .instagram-mas .container-mas {
@@ -237,6 +237,7 @@ body {
     cursor: pointer;
     border: 2px solid rgb(245, 246, 241);
     padding: 6px 10px;
+    margin-bottom: 0;
 }
 
 .container-mas h4:hover {
@@ -256,7 +257,7 @@ body {
 }
 .container-mas .typcn-social-instagram::before {
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: var(--color-ins ) ;
     margin-right: 30px;
     width: 100%;
@@ -271,7 +272,7 @@ body {
     /* margin-right: 20px; */
     color: rgb(245, 246, 241);
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .container-mas .es:hover {
@@ -401,18 +402,26 @@ body {
 .container-fotos img {
     width: 100%;
     cursor: pointer;
+    height: 100%;
     transition: all ease .4s;
+    justify-content: sp
 }
 
-.container-fotos img:hover {
+
+/* .container-fotos img:hover {
     transform: scale(1.1);
+} */
+.foto.col-md-3,
+.foto-dividida.col-md-3 {
+    /* padding: 0; */
+    padding : 0 5px;
 }
-
 .foto,
 .foto-primera,
 .foto-segunda {
     overflow: hidden !important;
     margin-bottom: 10px;
+    flex-grow: 1;
 }
 
 .foto-dividida {
@@ -546,7 +555,7 @@ footer p {
 }
 
 .page-alava .page-text {
-    margin-bottom: 75px;
+    margin-bottom: 150px;
 }
 
 
@@ -640,7 +649,7 @@ footer p {
     border: 2px solid rgb(175, 136, 79);
     padding: 2px 10px;
     background: transparent;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     color: rgb(175, 136, 79);
     transition: all ease .5s;
 }
@@ -658,12 +667,13 @@ footer p {
 
 .btn-reserva {
     text-transform: uppercase;
+    font-family: 'Accord Regular';
 }
 
 .btn-infoo {
     padding: 2px 1.2rem;
     margin-right: .8rem;
-    font-family: 'Accord thin';
+    font-family: 'Accord Regular';
     font-size: 12pt;
 }
 
@@ -725,7 +735,7 @@ footer p {
 
 .precio .por-noche {
     margin-left: 15px;
-    font-family: 'Accord thin';
+    font-family: 'Accord Thin';
     font-size: 12pt;
     color: rgb(175, 136, 79);
 }
