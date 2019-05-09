@@ -589,6 +589,10 @@ footer p {
     padding: 5px;
 }
 
+.footer-alava a {
+    color: rgb(38, 38, 38);
+    text-decoration: none;
+}
 
 /* ################################################################################
                             PAGE SUITES
