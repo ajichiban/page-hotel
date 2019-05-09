@@ -38,8 +38,11 @@ body {
     padding: 20px 10px;
 }
 
-
-/* --- --- CLASS UNITS --- --- */
+/* --- --- Class utilies --- --- */
+.f-light{
+    font-family: 'Accord Light';
+}
+/* --- --- CLASS UNITS JS--- --- */
 
 .back-transparent {
     /* opacity: .8; */
@@ -236,7 +239,7 @@ body {
     color: rgb(245, 246, 241);
     cursor: pointer;
     border: 2px solid rgb(245, 246, 241);
-    padding: 6px 10px;
+    padding: 6px 10px 4px 10px;
     margin-bottom: 0;
 }
 
@@ -273,6 +276,7 @@ body {
     color: rgb(245, 246, 241);
     cursor: pointer;
     font-size: 1.4rem;
+    margin-top: 2px;
 }
 
 .container-mas .es:hover {
@@ -467,7 +471,9 @@ body {
     color: rgb(175, 136, 79);
     font-size: 13pt;
 }
-
+.direccion-contacto a {
+    text-decoration: none;
+}
 .direccion-contacto>* {
     margin-bottom: 16px;
 }
@@ -492,10 +498,13 @@ body {
     background: transparent;
 }
 
-.formulario-contacto ::-webkit-input-placeholder,
+
 .formulario-contacto ::-moz-placeholder {
     color: rgb(175, 136, 79);
     opacity: .7;
+}
+.formulario-contacto ::-webkit-input-placeholder{
+    color: rgb(175, 136, 79);
 }
 
 .btn-submit>button {
@@ -588,6 +597,8 @@ footer p {
 .container-suites {
     margin-top: 150px;
     margin-bottom: 150px;
+   /*  padding: 0 50px; */
+
 }
 
 
@@ -723,7 +734,7 @@ footer p {
 .precio .euro {
     font-size: 25pt;
     color: rgb(175, 136, 79);
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .precio svg {
@@ -794,16 +805,16 @@ footer p {
 
 .servicio-galeria {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 100%;
     grid-template-rows: 50vh;
     column-gap: 10px;
     margin-bottom: 20px;
 }
 
 
-/* .servicio-galeria >* {
-    height: 50vh;
-} */
+.servicio-galeria >* {
+    margin-bottom: 10px;
+}
 
 .servicio-galeria img,
 .box-dividida img {
@@ -822,6 +833,7 @@ footer p {
 
 .box-dividida>* {
     height: 50%;
+    width: 100%;
 }
 
 .box-dividida div:first-child {
@@ -1053,6 +1065,15 @@ footer p {
         flex-basis: 30%;
         padding: 5px;
     }
+    /* --- --- PageServicios --- --- */
+    .servicio-galeria {
+        /* display: grid; */
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50vh;
+        column-gap: 10px;
+        margin-bottom: 20px;
+        padding-right: 30px;
+    }
     /* --- --- PAGE GALERIA --- --- */
     .grid .grid-item {
         width: 48%;
@@ -1111,6 +1132,11 @@ footer p {
     }
     .container-info-invertido span {
         text-align: left;
+    }
+
+    /* --- --- PAge Suite --- --- */
+    .container-suites {
+        padding: 0 50px;
     }
 }
 
