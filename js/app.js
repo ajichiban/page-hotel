@@ -7,7 +7,7 @@ $(function() {
 
 
     // Compruebo en que pagina esta
-    if (url.includes('index') || url == '/') {
+    if (url.includes('index') || url == '/' || url == ''){
         console.log('index')
         $('.manu-items a').each(function() {
             $(this).css('opacity', '1')
