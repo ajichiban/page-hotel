@@ -4,7 +4,7 @@ $(function() {
     =============================================*/
     const url = location.pathname,
         barraNavegacion = $('.barra-navegacion')
-
+    console.log('url ->',url);
 
     // Compruebo en que pagina esta
     if (url.includes('index') || url == '/' || url == ''){
