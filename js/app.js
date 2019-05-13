@@ -13,6 +13,7 @@ $(function() {
             $(this).css('opacity', '1')
         })
         $('.barra-navegacion').addClass('back-transparent-dark')
+        
     } else {
         // Si no es el home , la baar de navegacion cambia de color
         $('.menu-items a').addClass('change-color-barra')
@@ -124,7 +125,8 @@ $(function() {
             if (scroll > carouselContainer) {
                 console.log('se paso');
                 if (matchMedia('(min-width: 1100px)').matches) {
-
+                    $('.boton-home img').attr('src','./img/logo.png' );
+                    console.log($('.boton-home img'), '<--')
                     $('.barra-navegacion').removeClass('back-transparent-dark');
                     $('.barra-navegacion').addClass('back-transparent');
                     $('.menu .menu-items a').addClass('menu-color-scroll');
@@ -137,6 +139,8 @@ $(function() {
                     $('.typcn-social-instagram').addClass('skin-dark')
                 }
             } else {
+                $('.boton-home img').attr('src','./img/logo-white.png' )
+                console.log($('.boton-home img'), '<--')
                 $('.barra-navegacion').addClass('back-transparent-dark');
                 $('.barra-navegacion').removeClass('back-transparent');
                 $('.menu .menu-items a').removeClass('menu-color-scroll');
