@@ -1140,13 +1140,13 @@ footer p {
     /* --- --- PAGE EXPERIENCIAS --- --- */
     .block-experiencia {
         justify-content: flex-end;
-        height: 49vh;
+        height: 19rem;
         position: relative;
         flex-direction: row;
     }
     .block-experiencia-invertido {
         justify-content: start;
-        height: 49vh;
+        height: 19rem;
         position: relative;
         flex-direction: row;
     }
