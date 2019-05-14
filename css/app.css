@@ -403,7 +403,9 @@ body {
 .container-principal-fotos .main-title {
     margin-bottom: 30px;
 }
-
+.container-fotos{
+    padding: 0 24px;
+}
 .container-fotos img {
     width: 100%;
     cursor: pointer;
@@ -461,6 +463,7 @@ body {
 
 .container-contacto {
     margin-bottom: 100px;
+    padding: 0 33px;
 }
 
 .container-contacto .main-title {
@@ -555,6 +558,7 @@ footer p {
 
 .page-alava {
     margin-bottom: 100px;
+    padding: 0 34px;
 }
 
 
@@ -819,9 +823,10 @@ footer p {
 
 .container-servicio {
     margin-top: 100px;
+    padding: 0 30px;
 }
-.container-servicio .servicio-textos .col-md-7{
-    text-indent: 2rem;
+.container-servicio .servicio-textos .col-md-8{
+    text-indent: 3rem;
 }
 .servicio-textos {
     text-align: center;
@@ -888,6 +893,7 @@ footer p {
 .container-experiencias {
     margin-top: 150px;
     margin-bottom: 150px;
+    padding: 0 43px;
 }
 
 .container-experiencias .page-title {
@@ -1037,10 +1043,11 @@ footer p {
 .container-galeria {
     margin-top: 200px;
     margin-bottom: 50px;
+    padding: 0 36px;
 }
 
 .container-galeria .grid>* {
-    margin: 0 .66% 15px .66%;
+    /*margin: 0 .66% 15px .66%;*/
 }
 
 .grid .grid-item,
@@ -1048,6 +1055,7 @@ footer p {
     width: 100%;
    /* width:auto;
    height: auto; */
+   padding: 5px;
 }
 
 .grid .grid-item img {
@@ -1127,18 +1135,18 @@ footer p {
     }
     /* --- --- PAGE GALERIA --- --- */
     .grid .grid-item {
-        width: 48%;
+        width: 50%;
     }
     /* --- --- PAGE EXPERIENCIAS --- --- */
     .block-experiencia {
         justify-content: flex-end;
-        height: 45vh;
+        height: 49vh;
         position: relative;
         flex-direction: row;
     }
     .block-experiencia-invertido {
         justify-content: start;
-        height: 45vh;
+        height: 49vh;
         position: relative;
         flex-direction: row;
     }
@@ -1187,7 +1195,7 @@ footer p {
 
     /* --- --- PAge Suite --- --- */
     .container-suites {
-        padding: 0 50px;
+        padding: 0 60px;
     }
 }
 
@@ -1198,7 +1206,8 @@ footer p {
     }
     /* --- --- PAGE GALERIA --- --- */
     .grid .grid-item {
-        width: 32%;
+        width: 33.33%;
+        padding: 5px;
     }
     
 }
